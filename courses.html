@@ -19,6 +19,11 @@
     .btn-kcc { background: var(--gold); border-color: var(--gold); color: var(--navy); font-weight: 700; }
     .content-card { border: 1px solid #e8edf4; border-radius: 1rem; height: 100%; padding: 1.5rem; }
     .section-title { color: var(--navy); font-weight: 800; }
+    .course-list { list-style: none; padding: 0; margin: 0; }
+    .course-list li { padding: .65rem 0; border-bottom: 1px solid #edf1f6; }
+    .course-list li:first-child { padding-top: 0; }
+    .course-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .course-list strong { color: var(--navy); }
     footer { background: #061d40; color: rgba(255,255,255,.78); }
   </style>
 </head>
@@ -46,22 +51,60 @@
       <p class="lead mb-0 col-lg-8">Find the right path for your goals. Contact the college for the current program offerings and enrollment requirements.</p>
     </div></header>
     <section class="py-5"><div class="container py-3">
+      <div class="text-center mb-4">
+        <div class="eyebrow mb-2">Curricular Offerings</div>
+        <h2 class="section-title">Academic programs</h2>
+      </div>
       <div class="row g-4">
-        <div class="col-md-6 col-lg-4"><article class="content-card">
-          <div class="eyebrow mb-2">01 · Programs</div><h2 class="section-title h4">Academic programs</h2>
-          <p class="text-secondary">Ask KCC for the current list of degree and certificate programs, including availability and admission requirements.</p>
-          <a class="link-primary fw-semibold" href="course-details.html">Read course information</a>
+        <div class="col-lg-6"><article class="content-card">
+          <h3 class="h5 fw-bold mb-3">Teacher Education</h3>
+          <ul class="course-list">
+            <li><strong>Bachelor of Elementary Education</strong> (BEEd)</li>
+            <li><strong>Bachelor of Early Childhood Education</strong> (BECEd)</li>
+            <li><strong>Bachelor of Secondary Education</strong> (BSEd) major in English</li>
+            <li><strong>Bachelor of Secondary Education</strong> (BSEd) major in Filipino</li>
+            <li><strong>Bachelor of Secondary Education</strong> (BSEd) major in Mathematics</li>
+            <li><strong>Bachelor of Secondary Education</strong> (BSEd) major in Values Education</li>
+            <li><strong>Bachelor of Physical Education</strong> (BPEd)</li>
+          </ul>
         </article></div>
-        <div class="col-md-6 col-lg-4"><article class="content-card">
-          <div class="eyebrow mb-2">02 · Student life</div><h2 class="section-title h4">Learning beyond class</h2>
-          <p class="text-secondary mb-0">Discover the opportunities and student activities available to learners at the college by contacting KCC.</p>
+        <div class="col-lg-6"><article class="content-card">
+          <h3 class="h5 fw-bold mb-3">Arts and Sciences</h3>
+          <ul class="course-list">
+            <li><strong>Bachelor of Arts in Philosophy</strong> (ABPhilo)</li>
+            <li><strong>Bachelor of Science in Psychology</strong> (BSPsych)</li>
+            <li><strong>Bachelor of Science in Criminology</strong></li>
+          </ul>
         </article></div>
-        <div class="col-md-6 col-lg-4"><article class="content-card">
-          <div class="eyebrow mb-2">03 · Enrollment</div><h2 class="section-title h4">Plan your next step</h2>
-          <p class="text-secondary">Get up-to-date guidance about enrollment dates, required documents, and the application process.</p>
-          <a class="link-primary fw-semibold" href="contact.html">Contact the college</a>
+        <div class="col-lg-6"><article class="content-card">
+          <h3 class="h5 fw-bold mb-3">Business and Accountancy</h3>
+          <ul class="course-list">
+            <li><strong>Bachelor of Science in Accountancy</strong> (BSA)</li>
+            <li><strong>Bachelor of Science in Management Accounting</strong> (BSMA)</li>
+            <li><strong>Bachelor of Science in Business Administration</strong> major in Financial Management</li>
+            <li><strong>Bachelor of Science in Business Administration</strong> major in Marketing Management</li>
+          </ul>
+        </article></div>
+        <div class="col-lg-6"><article class="content-card">
+          <h3 class="h5 fw-bold mb-3">Technology and Hospitality</h3>
+          <ul class="course-list">
+            <li><strong>Bachelor of Science in Information Technology</strong> (BSIT)</li>
+            <li><strong>Bachelor of Science in Tourism Management</strong> (BSTM)</li>
+          </ul>
+        </article></div>
+        <div class="col-12"><article class="content-card bg-light">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <div class="eyebrow mb-2">Special program</div>
+              <h3 class="h4 section-title">Supplemental Program for Non-Educational Degree Graduates</h3>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <p class="mb-0 fw-bold text-secondary">18 Units Professional Education</p>
+            </div>
+          </div>
         </article></div>
       </div>
+      <div class="text-center mt-4"><a class="btn btn-kcc rounded-pill px-4" href="contact.html">Inquire about a program</a></div>
     </div></section>
   </main>
   <footer class="py-4"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span class="fw-semibold text-white">Kabankalan Catholic College, Inc.</span><span>Kabankalan City, Negros Occidental</span></div></footer>
