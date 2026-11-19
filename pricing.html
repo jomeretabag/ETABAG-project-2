@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Request current tuition and fee information from Kabankalan Catholic College, Inc.">
+  <title>Tuition and Fees | Kabankalan Catholic College, Inc.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root { --navy: #092b5c; --blue: #123d78; --gold: #e8bd35; --ink: #17243a; }
+    body { color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .navbar { background: #fff; }
+    .brand-mark { width: 48px; height: 48px; object-fit: contain; }
+    .brand-name { color: var(--navy); font-size: .9rem; font-weight: 750; line-height: 1.15; max-width: 220px; }
+    .nav-link { color: var(--navy); font-weight: 600; }
+    .page-hero { background: linear-gradient(125deg, #082552, var(--blue)); color: #fff; }
+    .eyebrow { color: var(--gold); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+    .page-hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; }
+    .btn-kcc { background: var(--gold); border-color: var(--gold); color: var(--navy); font-weight: 700; }
+    .content-card { border: 1px solid #e8edf4; border-radius: 1rem; height: 100%; padding: 1.5rem; }
+    .section-title { color: var(--navy); font-weight: 800; }
+    footer { background: #061d40; color: rgba(255,255,255,.78); }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom" aria-label="Main navigation">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img class="brand-mark" src="assets/kcc-logo.png" alt="KCC seal"><span class="brand-name">Kabankalan Catholic College, Inc.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNavigation"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="trainers.html">Faculty</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="course-details.html">Course details</a></li><li><a class="dropdown-item" href="pricing.html">Tuition and fees</a></li><li><a class="dropdown-item" href="starter-page.html">Welcome</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-kcc rounded-pill px-3" href="contact.html">Request fee details</a></li>
+      </ul></div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-hero py-5"><div class="container py-lg-5">
+      <div class="eyebrow mb-3">Tuition and fees</div>
+      <h1 class="mb-3">Plan your education with current information.</h1>
+      <p class="lead mb-0 col-lg-8">For accurate tuition, fees, and payment information, request the latest schedule directly from the college.</p>
+    </div></header>
+    <section class="py-5"><div class="container py-3">
+      <div class="row justify-content-center g-4">
+        <div class="col-lg-8"><article class="content-card">
+          <h2 class="section-title h3">Ask for the current fee schedule</h2>
+          <p class="text-secondary">Tuition and other fees may vary by program, academic year, and enrollment status. This page does not list prices so you can get the most accurate information from KCC.</p>
+          <h3 class="h5 fw-bold">When contacting the college, ask about</h3>
+          <ul class="text-secondary">
+            <li>Tuition and other fees for your selected program</li>
+            <li>Payment schedules and accepted payment methods</li>
+            <li>Available scholarships or financial assistance</li>
+          </ul>
+          <a class="btn btn-kcc rounded-pill px-4" href="contact.html">Contact the college</a>
+        </article></div>
+      </div>
+    </div></section>
+  </main>
+  <footer class="py-4"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span class="fw-semibold text-white">Kabankalan Catholic College, Inc.</span><span>Kabankalan City, Negros Occidental</span></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

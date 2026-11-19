@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover Kabankalan Catholic College, Inc., a Catholic college in Kabankalan City, Negros Occidental.">
+  <title>Kabankalan Catholic College, Inc.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --kcc-navy: #092b5c;
+      --kcc-blue: #123d78;
+      --kcc-gold: #e8bd35;
+      --kcc-cream: #fff8df;
+      --kcc-ink: #17243a;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      color: var(--kcc-ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    .navbar {
+      background: #fff;
+    }
+
+    .brand-mark {
+      height: 54px;
+      width: 54px;
+      object-fit: contain;
+    }
+
+    .brand-name {
+      color: var(--kcc-navy);
+      font-size: .95rem;
+      font-weight: 750;
+      line-height: 1.15;
+      max-width: 230px;
+    }
+
+    .nav-link {
+      color: var(--kcc-navy);
+      font-weight: 600;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #a77a00;
+    }
+
+    .btn-kcc {
+      background: var(--kcc-gold);
+      border: 1px solid var(--kcc-gold);
+      color: var(--kcc-navy);
+      font-weight: 700;
+    }
+
+    .btn-kcc:hover,
+    .btn-kcc:focus {
+      background: #f3cf55;
+      border-color: #f3cf55;
+      color: var(--kcc-navy);
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 80% 10%, rgba(232, 189, 53, .2), transparent 35%),
+        linear-gradient(125deg, #082552, var(--kcc-blue));
+      color: #fff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 50%;
+      content: "";
+      height: 520px;
+      position: absolute;
+      right: -140px;
+      top: -190px;
+      width: 520px;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      color: var(--kcc-gold);
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 800;
+      letter-spacing: -.04em;
+      line-height: 1.05;
+      max-width: 680px;
+    }
+
+    .hero p {
+      color: rgba(255, 255, 255, .82);
+      font-size: 1.1rem;
+      max-width: 560px;
+    }
+
+    .hero-seal {
+      background: rgba(255, 255, 255, .96);
+      border: 7px solid rgba(232, 189, 53, .8);
+      border-radius: 50%;
+      box-shadow: 0 24px 70px rgba(0, 0, 0, .28);
+      max-width: min(390px, 78vw);
+      padding: 1.2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-kicker {
+      color: #9a7200;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      color: var(--kcc-navy);
+      font-weight: 800;
+      letter-spacing: -.025em;
+    }
+
+    .value-card {
+      border: 1px solid #e8edf4;
+      border-radius: 1rem;
+      height: 100%;
+      padding: 1.6rem;
+    }
+
+    .value-number {
+      align-items: center;
+      background: var(--kcc-cream);
+      border-radius: 50%;
+      color: var(--kcc-navy);
+      display: inline-flex;
+      font-size: 1.15rem;
+      font-weight: 800;
+      height: 48px;
+      justify-content: center;
+      margin-bottom: 1rem;
+      width: 48px;
+    }
+
+    .motto {
+      background: var(--kcc-cream);
+      border-left: 5px solid var(--kcc-gold);
+      color: var(--kcc-navy);
+    }
+
+    .contact-section {
+      background: #f5f7fb;
+    }
+
+    footer {
+      background: #061d40;
+      color: rgba(255, 255, 255, .78);
+    }
+
+    footer a {
+      color: var(--kcc-gold);
+      text-decoration: none;
+    }
+
+    @media (max-width: 575.98px) {
+      .brand-name {
+        font-size: .82rem;
+        max-width: 190px;
+      }
+
+      .brand-mark {
+        height: 46px;
+        width: 46px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom" aria-label="Main navigation">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2 me-4" href="#home">
+        <img class="brand-mark" src="assets/kcc-logo.png" alt="Kabankalan Catholic College seal">
+        <span class="brand-name">Kabankalan Catholic College, Inc.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavigation">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="trainers.html">Faculty</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">More</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="course-details.html">Course details</a></li><li><a class="dropdown-item" href="pricing.html">Tuition and fees</a></li><li><a class="dropdown-item" href="starter-page.html">Welcome</a></li></ul></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-kcc rounded-pill px-4" href="contact.html">Get in touch</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero py-5" id="home">
+      <div class="container py-lg-5">
+        <div class="row align-items-center g-5 py-3 py-lg-4">
+          <div class="col-lg-7 hero-copy">
+            <div class="eyebrow mb-3">Kabankalan City · Negros Occidental</div>
+            <h1 class="mb-4">Learning with faith. Growing in purpose.</h1>
+            <p class="mb-4">Welcome to Kabankalan Catholic College, Inc.—a community inspired by faith and committed to learning, formation, and service.</p>
+            <a class="btn btn-kcc btn-lg rounded-pill px-4" href="about.html">Discover KCC</a>
+          </div>
+          <div class="col-lg-5 d-flex justify-content-center">
+            <img class="hero-seal img-fluid" src="assets/kcc-logo.png" alt="Kabankalan Catholic College, Inc. seal">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 py-lg-5" id="about">
+      <div class="container py-4">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <div class="section-kicker mb-2">A place to learn and belong</div>
+            <h2 class="section-title display-6 mb-3">Welcome to Kabankalan Catholic College</h2>
+            <p class="text-secondary fs-5 mb-0">Rooted in its Catholic identity and part of the Kabankalan community, KCC brings students together in a welcoming environment for learning and personal growth.</p>
+          </div>
+        </div>
+        <div class="row g-4 mt-4" id="community">
+          <div class="col-md-4">
+            <article class="value-card">
+              <span class="value-number" aria-hidden="true">01</span>
+              <h3 class="h5 fw-bold text-primary-emphasis">Learning</h3>
+              <p class="text-secondary mb-0">Build knowledge and skills in a community that values curiosity and lifelong learning.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="value-card">
+              <span class="value-number" aria-hidden="true">02</span>
+              <h3 class="h5 fw-bold text-primary-emphasis">Faith</h3>
+              <p class="text-secondary mb-0">Let faith and shared values guide a thoughtful, caring approach to education.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="value-card">
+              <span class="value-number" aria-hidden="true">03</span>
+              <h3 class="h5 fw-bold text-primary-emphasis">Service</h3>
+              <p class="text-secondary mb-0">Grow with a spirit of compassion and contribute positively to the community.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="motto">
+      <div class="container py-3">
+        <div class="motto rounded-4 p-4 p-md-5 text-center">
+          <div class="section-kicker mb-2">Inspired by Matthew 28:19</div>
+          <h2 class="section-title display-5 mb-2">“Teach ye all nations”</h2>
+          <p class="text-secondary mb-0">A guiding call to share knowledge, nurture faith, and serve others.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section py-5" id="contact">
+      <div class="container py-4 text-center">
+        <div class="section-kicker mb-2">Start a conversation</div>
+        <h2 class="section-title mb-3">Get to know KCC</h2>
+        <p class="text-secondary mx-auto mb-4" style="max-width: 620px;">For information about admissions, programs, or campus life, contact Kabankalan Catholic College directly.</p>
+        <p class="fw-semibold mb-0">Kabankalan City, Negros Occidental</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2">
+      <span class="fw-semibold text-white">Kabankalan Catholic College, Inc.</span>
+      <span>&copy; 2026 Kabankalan Catholic College, Inc.</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
