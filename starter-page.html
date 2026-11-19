@@ -13,13 +13,23 @@
     .brand-mark { width: 48px; height: 48px; object-fit: contain; }
     .brand-name { color: var(--navy); font-size: .9rem; font-weight: 750; line-height: 1.15; max-width: 220px; }
     .nav-link { color: var(--navy); font-weight: 600; }
-    .page-hero { background: linear-gradient(125deg, #082552, var(--blue)); color: #fff; }
+    .page-hero { background: radial-gradient(ellipse at 82% 12%, rgba(232,189,53,.22), transparent 35%), linear-gradient(125deg, #082552, var(--blue)); color: #fff; overflow: hidden; position: relative; }
+    .page-hero::after { border: 1px solid rgba(255,255,255,.12); border-radius: 50%; content: ""; height: 520px; position: absolute; right: -160px; top: -200px; width: 520px; }
+    .hero-copy { position: relative; z-index: 1; }
     .eyebrow { color: var(--gold); font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
-    .page-hero h1 { font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; }
+    .page-hero h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 800; letter-spacing: -.04em; line-height: 1.05; }
+    .hero-seal { background: rgba(255,255,255,.96); border: 7px solid rgba(232,189,53,.8); border-radius: 50%; box-shadow: 0 24px 70px rgba(0,0,0,.28); max-width: 340px; padding: 1.2rem; }
     .btn-kcc { background: var(--gold); border-color: var(--gold); color: var(--navy); font-weight: 700; }
-    .content-card { border: 1px solid #e8edf4; border-radius: 1rem; height: 100%; padding: 1.5rem; }
+    .btn-kcc:hover { background: #f3cf55; border-color: #f3cf55; color: var(--navy); }
+    .btn-outline-light:hover { color: var(--navy); }
+    .content-card { border: 1px solid #e8edf4; border-radius: 1rem; height: 100%; padding: 1.6rem; transition: transform .2s ease, box-shadow .2s ease; }
+    .content-card:hover { box-shadow: 0 16px 38px rgba(9,43,92,.09); transform: translateY(-4px); }
+    .feature-icon { align-items: center; background: #fff8df; border-radius: 50%; color: var(--navy); display: inline-flex; font-size: 1.2rem; font-weight: 800; height: 48px; justify-content: center; margin-bottom: 1rem; width: 48px; }
     .section-title { color: var(--navy); font-weight: 800; }
+    .motto { background: #fff8df; border-left: 5px solid var(--gold); color: var(--navy); }
+    .cta-section { background: #f5f7fb; }
     footer { background: #061d40; color: rgba(255,255,255,.78); }
+    footer a { color: var(--gold); text-decoration: none; }
   </style>
 </head>
 <body>
@@ -40,15 +50,54 @@
 
   <main>
     <header class="page-hero py-5"><div class="container py-lg-5">
-      <div class="eyebrow mb-3">Kabankalan Catholic College, Inc.</div>
-      <h1 class="mb-3">A place to learn, grow, and serve.</h1>
-      <p class="lead mb-4 col-lg-8">Welcome to a community inspired by faith and committed to education in Kabankalan City, Negros Occidental.</p>
-      <a class="btn btn-kcc rounded-pill px-4" href="about.html">Learn about KCC</a>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7 hero-copy">
+          <div class="eyebrow mb-3">Welcome to KCC</div>
+          <h1 class="mb-3">Faithful learning.<br>Purposeful service.</h1>
+          <p class="lead mb-4 col-lg-10" style="color: rgba(255,255,255,.82)">Join a community shaped by Catholic values, academic growth, and a commitment to serve the people of Kabankalan and beyond.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-kcc rounded-pill px-4" href="courses.html">Explore programs</a>
+            <a class="btn btn-outline-light rounded-pill px-4" href="about.html">Discover KCC</a>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center"><img class="hero-seal img-fluid" src="assets/kcc-logo.png" alt="Kabankalan Catholic College seal"></div>
+      </div>
     </div></header>
     <section class="py-5"><div class="container py-3">
+      <div class="text-center mb-5">
+        <div class="eyebrow mb-2" style="color:#9a7200">Your journey starts here</div>
+        <h2 class="section-title">Learn with purpose</h2>
+      </div>
       <div class="row g-4">
-        <div class="col-md-6"><article class="content-card"><h2 class="section-title h4">Explore learning</h2><p class="text-secondary">Find out about courses and ask the college for current program information.</p><a class="link-primary fw-semibold" href="courses.html">View courses</a></article></div>
-        <div class="col-md-6"><article class="content-card"><h2 class="section-title h4">Connect with KCC</h2><p class="text-secondary">Get in touch with the college for admissions and campus inquiries.</p><a class="link-primary fw-semibold" href="contact.html">Contact the college</a></article></div>
+        <div class="col-md-4"><article class="content-card">
+          <span class="feature-icon" aria-hidden="true">01</span>
+          <h3 class="h5 fw-bold">Academic excellence</h3>
+          <p class="text-secondary mb-0">Explore diverse degree programs designed to prepare you for a meaningful professional future.</p>
+        </article></div>
+        <div class="col-md-4"><article class="content-card">
+          <span class="feature-icon" aria-hidden="true">02</span>
+          <h3 class="h5 fw-bold">Faith and character</h3>
+          <p class="text-secondary mb-0">Grow in knowledge while strengthening the values of integrity, compassion, and service.</p>
+        </article></div>
+        <div class="col-md-4"><article class="content-card">
+          <span class="feature-icon" aria-hidden="true">03</span>
+          <h3 class="h5 fw-bold">A welcoming community</h3>
+          <p class="text-secondary mb-0">Learn alongside classmates, mentors, and faculty who support your goals and wellbeing.</p>
+        </article></div>
+      </div>
+    </div></section>
+    <section class="py-5"><div class="container">
+      <blockquote class="motto rounded-4 p-4 p-lg-5 mb-0">
+        <p class="h3 fw-bold mb-2">“Teach ye all nations.”</p>
+        <footer class="bg-transparent text-secondary p-0">The guiding spirit behind learning, faith, and service at KCC.</footer>
+      </blockquote>
+    </div></section>
+    <section class="cta-section py-5"><div class="container py-3 text-center">
+      <h2 class="section-title mb-3">Ready to take the next step?</h2>
+      <p class="text-secondary mb-4">Find a program that matches your goals or speak with the college for enrollment guidance.</p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <a class="btn btn-kcc rounded-pill px-4" href="courses.html">View courses</a>
+        <a class="btn btn-outline-primary rounded-pill px-4" href="contact.html">Contact KCC</a>
       </div>
     </div></section>
   </main>
