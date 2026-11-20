@@ -22,6 +22,9 @@
     .section-title { color: var(--navy); font-weight: 800; }
     .value-list { display: flex; flex-wrap: wrap; gap: .65rem; list-style: none; padding: 0; margin: 0; }
     .value-list li { background: #edf3fb; border: 1px solid #dbe6f3; border-radius: 999px; color: var(--navy); font-weight: 750; padding: .55rem 1rem; }
+    .building-card { border: 1px solid #e8edf4; border-radius: 1rem; background: #fff; overflow: hidden; }
+    .building-card img { display: block; height: 320px; width: 100%; object-fit: cover; }
+    .building-card .building-caption { padding: 1.25rem 1.5rem; }
     footer { background: #061d40; color: rgba(255,255,255,.78); }
     footer a { color: var(--gold); text-decoration: none; }
   </style>
@@ -97,6 +100,34 @@
         </div>
       </div>
       <div class="text-center mt-4"><a class="btn btn-kcc rounded-pill px-4" href="courses.html">Explore courses</a></div>
+    </div></section>
+    <section class="py-5"><div class="container py-3">
+      <div class="text-center mb-4">
+        <div class="eyebrow mb-2" style="color:#9a7200">Campus Facilities</div>
+        <h2 class="section-title">KCC Buildings</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="building-card">
+            <img src="assets/cmat-building.png" alt="CMAT Building at Kabankalan Catholic College">
+            <div class="building-caption">
+              <div class="eyebrow mb-2" style="color:#9a7200">CMAT Building</div>
+              <h3 class="h4 section-title mb-2">CMAT Building</h3>
+              <p class="text-secondary mb-0">A key learning and activity facility within the Kabankalan Catholic College campus.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="building-card">
+            <img src="assets/ceas-building.png" alt="CEAS Building at Kabankalan Catholic College">
+            <div class="building-caption">
+              <div class="eyebrow mb-2" style="color:#9a7200">CEAS Building</div>
+              <h3 class="h4 section-title mb-2">CEAS Building</h3>
+              <p class="text-secondary mb-0">A campus building that supports academic classes, student activities, and community gatherings.</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </div></section>
   </main>
   <footer class="py-4"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span class="fw-semibold text-white">Kabankalan Catholic College, Inc.</span><span>Kabankalan City, Negros Occidental</span></div></footer>
