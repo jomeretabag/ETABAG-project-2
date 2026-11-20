@@ -20,6 +20,8 @@
     .btn-kcc:hover { background: #f3cf55; border-color: #f3cf55; color: var(--navy); }
     .content-card { border: 1px solid #e8edf4; border-radius: 1rem; height: 100%; padding: 1.5rem; }
     .section-title { color: var(--navy); font-weight: 800; }
+    .value-list { display: flex; flex-wrap: wrap; gap: .65rem; list-style: none; padding: 0; margin: 0; }
+    .value-list li { background: #edf3fb; border: 1px solid #dbe6f3; border-radius: 999px; color: var(--navy); font-weight: 750; padding: .55rem 1rem; }
     footer { background: #061d40; color: rgba(255,255,255,.78); }
     footer a { color: var(--gold); text-decoration: none; }
   </style>
@@ -59,11 +61,40 @@
       </div>
     </div></section>
     <section class="bg-light py-5"><div class="container py-3">
-      <h2 class="section-title text-center mb-4">What guides our community</h2>
+      <div class="text-center mb-4">
+        <div class="eyebrow mb-2">Our Purpose</div>
+        <h2 class="section-title">Vision, Mission, & Core Values</h2>
+      </div>
       <div class="row g-4">
-        <div class="col-md-4"><article class="content-card bg-white"><h3 class="h5 fw-bold">Faith</h3><p class="text-secondary mb-0">A Catholic identity that informs our shared purpose and values.</p></article></div>
-        <div class="col-md-4"><article class="content-card bg-white"><h3 class="h5 fw-bold">Learning</h3><p class="text-secondary mb-0">A commitment to curiosity, knowledge, and continued growth.</p></article></div>
-        <div class="col-md-4"><article class="content-card bg-white"><h3 class="h5 fw-bold">Service</h3><p class="text-secondary mb-0">A spirit of care and responsibility toward the wider community.</p></article></div>
+        <div class="col-lg-6">
+          <article class="content-card bg-white">
+            <div class="eyebrow mb-2">Vision</div>
+            <h3 class="h4 section-title mb-3">Our shared direction</h3>
+            <p class="text-secondary mb-0">Kabankalan Catholic College, Inc., as builder of the future, is a Christ-centered learning community of accountable and socially responsible individuals, that leads positive change, responds to and serves the mission of the Diocese, the nation, and the world.</p>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="content-card bg-white">
+            <div class="eyebrow mb-2">Mission</div>
+            <h3 class="h4 section-title mb-3">Our commitment</h3>
+            <p class="text-secondary mb-0">KCC commits to provide quality and inclusive Catholic education, rooted in the Gospel and driven by innovative research and meaningful community engagements, empowering its members to become effective agents of societal transformation.</p>
+          </article>
+        </div>
+        <div class="col-12">
+          <article class="content-card bg-white">
+            <div class="eyebrow mb-2">Core Values</div>
+            <h3 class="h4 section-title mb-3">What guides us</h3>
+            <ul class="value-list">
+              <li>Kindness</li>
+              <li>Christ-centeredness</li>
+              <li>Creativity</li>
+              <li>Integrity</li>
+              <li>Accountability</li>
+              <li>Nurturing</li>
+              <li>Synodality</li>
+            </ul>
+          </article>
+        </div>
       </div>
       <div class="text-center mt-4"><a class="btn btn-kcc rounded-pill px-4" href="courses.html">Explore courses</a></div>
     </div></section>
